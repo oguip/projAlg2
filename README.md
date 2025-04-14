@@ -1,7 +1,34 @@
 
 # Projeto: Estrutura de Dados com Árvores Binária de Busca (BST) e AVL
 
-Este projeto tem como objetivo implementar, comparar e analisar o desempenho das estruturas de dados **Árvore Binária de Busca (BST)** e **Árvore AVL**, utilizando a base pública `dados_abertos_ogu_2024122.csv`. A comparação envolve o tempo de inserção, tempo de busca e a altura das árvores geradas.
+Este projeto tem como objetivo implementar, comparar e analisar o desempenho das estruturas de dados **Árvore Binária de Busca (BST)** e **Árvore AVL**, utilizando a base pública `dados_abertos_ogu_2024122.csv`, referente ao Programa Minha Casa, Minha Vida (MCMV).
+
+---
+
+## 🔍 Sobre o Conjunto de Dados
+
+A base de dados disponibilizada pelo Ministério das Cidades contém informações sobre os empreendimentos e unidades habitacionais contratadas pelo Programa Minha Casa, Minha Vida com recursos do **Orçamento Geral da União (OGU)**. Os dados abrangem:
+
+- Identificação do município (UF, código IBGE)
+- Código e nome do empreendimento (`cod_operacao`)
+- Modalidade de financiamento (como FAR – Fundo de Arrendamento Residencial)
+- Nome do agente financeiro
+- Data de assinatura e situação
+- Região geográfica
+
+Esta base é atualizada periodicamente e tem como objetivo permitir análises relacionadas à habitação de interesse social no Brasil.
+
+---
+
+## 📁 Estrutura dos Dados (Exemplo)
+
+| data_referencia | cod_ibge | txt_nome_municipio | txt_sigla_uf | txt_regiao   | dt_assinatura | cod_operacao | txt_nome_empreendimento           | txt_nome_agente_financeiro | txt_modalidade |
+|-----------------|----------|--------------------|---------------|--------------|----------------|---------------|----------------------------------|-----------------------------|----------------|
+| 31/12/2024      | 520.140  | Aparecida de Goiânia | GO           | Centro-Oeste | 05/08/2009     | 16517361      | RES AGUAS CLARAS                | CAIXA                       | FAR            |
+| 31/12/2024      | 330.330  | Niterói             | RJ           | Sudeste       | 23/07/2007     | 18283735      | VARZEA DAS MOCAS I. RESIDENCIAL | CAIXA                       | FAR            |
+| 31/12/2024      | 330.455  | Rio de Janeiro      | RJ           | Sudeste       | 22/06/2007     | 19095100      | VIVENDAS DAS ANDORINHAS         | CAIXA                       | FAR            |
+
+A coluna **`cod_operacao`** foi escolhida como chave para as árvores.
 
 ---
 
@@ -12,6 +39,8 @@ A base utilizada é composta por **18.532 registros únicos** de operações gov
 - Total de elementos únicos: `18.532`
 - Coluna utilizada como chave: `cod_operacao`
 - Arquivo: `dados_abertos_ogu_2024122.csv`
+
+---
 
 ---
 
