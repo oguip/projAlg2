@@ -56,12 +56,12 @@ A linguagem utilizada foi **Python**, e as árvores foram construídas com class
 
 ## 📊 Resultados Comparativos
 
-| Métrica                 | BST        | AVL        |
-|-------------------------|------------|------------|
-| Elementos inseridos     | 18.532     | 18.532     |
-| Tempo de inserção       | 5.55 s     | 1.90 s     |
-| Tempo de busca (100)    | 0.016 s    | 0.000 s    |
-| Altura da árvore        | 1761       | 17         |
+| Métrica                      | BST         | AVL         |
+|------------------------------|-------------|-------------|
+| Elementos inseridos          | 18.532      | 18.532      |
+| Tempo de inserção            | 7.50 s      | 2.76 s      |
+| Tempo de busca (1000)        | 2.11 s      | 0.90 s      |
+| Altura da árvore             | 1761        | 17          |
 
 ---
 
