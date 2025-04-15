@@ -121,7 +121,27 @@ Os gráficos apresentados mostram claramente a superioridade da AVL em termos de
 
 ---
 
-### v) Discussão: Alterando a Chave de Busca
+### v) Discussão: Alterando a Chave de Busca / Como buscar por outros campos além da chave?
+
+Como as Árvores BST e AVL são organizadas em torno de uma **chave primária específica** (`cod_operacao`), buscas por outros campos exigem abordagens alternativas:
+
+### 1. Busca Linear na Árvore
+Percorrer todos os nós da árvore verificando o campo desejado:
+
+```python
+def buscar_por_estado(node, estado, resultados):
+    if node is None:
+        return
+    if node.data['txt_sigla_uf'] == estado:
+        resultados.append(node.data)
+    buscar_por_estado(node.left, estado, resultados)
+    buscar_por_estado(node.right, estado, resultados)
+```
+
+Essa abordagem é O(n), pois percorre todos os nós — mas é funcional.
+
+### 2. Nova Árvore com Outra Chave
+Criar uma nova árvore AVL ou BST com outra coluna como chave, caso buscas por esse campo sejam frequentes.
 
 Caso a chave utilizada não fosse `cod_operacao`, mas sim:
 
