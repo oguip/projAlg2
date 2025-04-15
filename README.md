@@ -80,7 +80,7 @@ A linguagem utilizada foi **Python**, e as árvores foram construídas com class
 ### i) Método
 
 - **Equipamento Utilizado:**  
-  Notebook com processador Intel Core i5 e 16GB de RAM.
+  Notebook com processador Ryzen 7 2700 com de 32GB RAM.
 
 - **Massa de Dados:**  
   Arquivo `dados_abertos_ogu_2024122.csv`, contendo 18.532 registros únicos.
