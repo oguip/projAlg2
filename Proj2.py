@@ -156,7 +156,7 @@ altura_bst = bst.height()
 altura_avl = avl.height()
 
 # Busca por 100 elementos aleatórios
-amostras = random.sample(list(df['cod_operacao']), 100)
+amostras = random.sample(list(df['cod_operacao']), 1000)
 
 start_search_bst = time.time()
 for cod in amostras:
