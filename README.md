@@ -117,7 +117,7 @@ Os gráficos apresentados mostram claramente a superioridade da AVL em termos de
 | Estrutura | Complexidade Inserção | Complexidade Busca | Tempo Real de Busca |
 |-----------|------------------------|---------------------|----------------------|
 | **BST**   | O(log n) média / O(n) pior caso | O(log n) média / O(n) pior caso | 0.0167 s |
-| **AVL**   | O(log n)               | O(log n)            | 0.0000 s |
+| **AVL**   | O(log n)               | O(log n)            | 0.0900 s |
 
 ---
 
